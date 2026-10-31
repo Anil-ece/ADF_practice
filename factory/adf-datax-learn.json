@@ -1,0 +1,15 @@
+{
+	"name": "adf-datax-learn",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f0ddbfea-5d51-4aee-852f-13720e4da739",
+		"tenantId": "0d643302-ea20-41ee-9461-2f8caea0e68a"
+	}
+}
