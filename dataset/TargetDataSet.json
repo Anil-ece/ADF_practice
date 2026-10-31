@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "landing/processed_order",
+				"folderPath": "landing/processed_order/2026/10/31",
 				"container": "devx"
 			},
 			"columnDelimiter": ",",
