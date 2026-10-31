@@ -1,0 +1,26 @@
+{
+	"name": "TargetDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TargetAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@concat('landing/processed_order/',formatDateTime(utcNow(),'yyyy/mm/dd'))",
+					"type": "Expression"
+				},
+				"container": "devx"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
