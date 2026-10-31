@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": "landing/processed_order/2026/10/31",
+				"folderPath": {
+					"value": "@concat('landing/processed_order/',formatDateTime(utcNow(),'yyyy/mm/dd'))",
+					"type": "Expression"
+				},
 				"container": "devx"
 			},
 			"columnDelimiter": ",",
