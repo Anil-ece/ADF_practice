@@ -1,0 +1,23 @@
+{
+	"name": "TargetDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TargetAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "landing/processed_order",
+				"container": "devx"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
