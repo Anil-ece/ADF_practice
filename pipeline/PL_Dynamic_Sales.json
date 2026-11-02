@@ -39,7 +39,7 @@
 				}
 			},
 			{
-				"name": "FE_LoopThrough_Files",
+				"name": "ForEach",
 				"type": "ForEach",
 				"dependsOn": [
 					{
