@@ -56,7 +56,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('GM_Get_Sourse_FileList').output.childItems",
+						"value": "@activity('GM_Get_Sourse_File').output.childItems",
 						"type": "Expression"
 					},
 					"activities": [
