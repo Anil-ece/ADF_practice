@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "GM_Get_Sourse_FileList",
+				"name": "GM_Get_Sourse_File",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
@@ -26,8 +26,7 @@
 							"folder_name": {
 								"value": "@pipeline().parameters.source_folder",
 								"type": "Expression"
-							},
-							"file_name": "''"
+							}
 						}
 					},
 					"fieldList": [
@@ -48,7 +47,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "GM_Get_Sourse_FileList",
+						"activity": "GM_Get_Sourse_File",
 						"dependencyConditions": [
 							"Succeeded"
 						]
