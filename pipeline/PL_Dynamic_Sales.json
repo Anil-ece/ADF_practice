@@ -42,7 +42,7 @@
 		"parameters": {
 			"source_folder": {
 				"type": "string",
-				"defaultValue": "vendor/sales"
+				"defaultValue": "vendor/sales/"
 			},
 			"sink_folder": {
 				"type": "string",
