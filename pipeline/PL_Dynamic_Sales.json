@@ -17,20 +17,14 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DS_Source_CSV",
-						"type": "DatasetReference",
-						"parameters": {
-							"folder_name": {
-								"value": "@pipeline().parameters.source_folder",
-								"type": "Expression"
-							},
-							"file_name": "''"
-						}
+						"type": "DatasetReference"
 					},
 					"fieldList": [
 						"childItems"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -42,7 +36,7 @@
 		"parameters": {
 			"source_folder": {
 				"type": "string",
-				"defaultValue": "vendor/sales"
+				"defaultValue": "sales"
 			},
 			"sink_folder": {
 				"type": "string",
