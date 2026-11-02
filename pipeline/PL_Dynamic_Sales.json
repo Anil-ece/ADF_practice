@@ -110,6 +110,10 @@
 										"folder_name": {
 											"value": "@pipeline().parameters.source_folder",
 											"type": "Expression"
+										},
+										"file_name": {
+											"value": "@item().name",
+											"type": "Expression"
 										}
 									}
 								}
