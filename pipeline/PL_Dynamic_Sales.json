@@ -46,7 +46,7 @@
 			},
 			"sink_folder": {
 				"type": "string",
-				"defaultValue": "sales/landing/2026-22-02"
+				"defaultValue": "sales/landing/2026-11-02"
 			}
 		},
 		"annotations": []
