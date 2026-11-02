@@ -17,7 +17,14 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DS_Source_CSV",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"folder_name": {
+								"value": "@pipeline().parameters.source_folder",
+								"type": "Expression"
+							},
+							"file_name": "''"
+						}
 					},
 					"fieldList": [
 						"childItems"
